@@ -1,0 +1,59 @@
+.CityNameSearch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    position:relative;
+    object-fit: contain;
+    
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    position:relative;
+    object-fit: contain;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     backdrop-filter: blur(10px);
+}
+
+
+@media screen and (max-width: 768px) {
+  .CityNameSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    position:relative;
+    object-fit: contain;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     backdrop-filter: blur(10px);
+  }
+    
+}

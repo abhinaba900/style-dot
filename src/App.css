@@ -1,0 +1,126 @@
+/* App.css */
+body {
+  margin: 0;
+  background-image: url("https://res.cloudinary.com/dannycoder/image/upload/v1450159983/rainy_fx8qwt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  background-image: url("https://res.cloudinary.com/dannycoder/image/upload/v1450159983/rainy_fx8qwt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100vw;
+  color: white;
+}
+
+.weather-container {
+  width: 85vw;
+  margin: 0 auto;
+  height: 88vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.fivedayforcast {
+  /* Add mobile styles if necessary */
+}
+
+.weather {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#map {
+  width: 50%;
+  height: 48vh;
+  left: 0;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  border-radius: 1rem;
+  
+}
+.heading{
+  font-size: 30px;
+}
+.location{
+  font-size: 20px;
+}
+.weather-container-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  border-radius: 1rem;
+}
+
+.google-maps{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: visible;
+  }
+.google-maps{
+  width: 100%;
+  height: 100%;
+}
+  .weather-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border-radius: 1rem;
+    position:relative;
+    object-fit: contain;
+
+  }
+
+  .weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Adjusted alignment for mobile */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #map {
+    position: relative; /* Adjusted position for mobile */
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .weather-container {
+    width: 85vw;
+    height: auto; /* Adjusted height for mobile */
+  }
+}
